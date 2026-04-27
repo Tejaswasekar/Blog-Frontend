@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const API_BASE = '/api';
+const API_BASE = 'https://blog-backend-g1crobixb-tejaswasekars-projects.vercel.app/api';
 
 export default function SocialInteraction({ mode = 'original' }) {
   const [stats, setStats] = useState({ visits: 0, likes: 0, dislikes: 0, comments: [] });
