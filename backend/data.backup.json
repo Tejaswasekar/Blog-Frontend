@@ -1,0 +1,25 @@
+{
+  "visits": 4,
+  "likes": 10,
+  "dislikes": 0,
+  "comments": [
+    {
+      "id": 1773756439583,
+      "author": "Aaryan Chougale",
+      "text": "seeing this website for the first time. ",
+      "timestamp": "2026-03-17T14:07:19.583Z"
+    },
+    {
+      "id": 1773753548867,
+      "author": "Shubham Tambe ",
+      "text": "very interactive website ",
+      "timestamp": "2026-03-17T13:19:08.867Z"
+    },
+    {
+      "id": 1773746312077,
+      "author": "Tejas Wasekar",
+      "text": "The Blog is very interactive, yet explaining the modern topics in simple language. ",
+      "timestamp": "2026-03-17T11:18:32.077Z"
+    }
+  ]
+}

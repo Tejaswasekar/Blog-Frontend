@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─────────────────────────────────────────
+   Global Styles & Scroll
+───────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar but allow scrolling */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+@layer utilities {
+  .fade-in  { opacity: 1; transition: opacity 0.3s ease-in-out; }
+  .fade-out { opacity: 0; transition: opacity 0.3s ease-in-out; }
+
+  /* Hide scrollbar for topic slider */
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* ─────────────────────────────────────────
+   Reading Progress Bar
+───────────────────────────────────────── */
+/* ─────────────────────────────────────────
+   Reading Progress Bar Track + Fill
+───────────────────────────────────────── */
+#reading-progress-track {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background-color: #e5e7eb;
+  z-index: 9998;
+}
+
+#reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 8px;
+  width: 0%;
+  background: linear-gradient(90deg, #0f5c40, #22c55e, #0ea5e9);
+  z-index: 9999;
+  transition: width 0.25s ease-out;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 0 8px rgba(34, 197, 94, 0.5);
+}
+
+/* ─────────────────────────────────────────
+   Article content: paragraph hover highlight
+───────────────────────────────────────── */
+article p {
+  transition: color 0.2s ease, background-color 0.2s ease, padding-left 0.2s ease, border-color 0.2s ease;
+  border-left: 2px solid transparent;
+  padding-left: 0;
+  border-radius: 0 4px 4px 0;
+  cursor: default;
+}
+
+article p:hover {
+  color: #111827;
+  background-color: #f8fafc;
+  padding-left: 10px;
+  border-left-color: #0f5c40;
+}
+
+/* ─────────────────────────────────────────
+   Card lift on hover
+───────────────────────────────────────── */
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.10);
+}
+
+/* ─────────────────────────────────────────
+   Animated underline for links
+───────────────────────────────────────── */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; left: 0;
+  width: 0; height: 1.5px;
+  background: currentColor;
+  transition: width 0.25s ease;
+  border-radius: 2px;
+}
+.link-underline:hover::after { width: 100%; }
+
+/* ─────────────────────────────────────────
+   Content slide-up entry animation
+───────────────────────────────────────── */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.slide-up {
+  animation: slide-up 0.42s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─────────────────────────────────────────
+   Topic pill active pulse
+───────────────────────────────────────── */
+@keyframes pill-pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(15, 92, 64, 0.4); }
+  50%       { box-shadow: 0 0 0 6px rgba(15, 92, 64, 0); }
+}
+.pill-active {
+  animation: pill-pulse 2.2s ease-in-out infinite;
+}
+
+/* ─────────────────────────────────────────
+   NEXT button shimmer on hover
+───────────────────────────────────────── */
+@keyframes shimmer {
+  from { background-position: -400px 0; }
+  to   { background-position: 400px 0; }
+}
+.btn-shimmer {
+  transition: background 0.3s ease, transform 0.15s ease;
+}
+.btn-shimmer:hover:not(:disabled) {
+  background-image: linear-gradient(90deg, #0f5c40 0%, #22c55e 50%, #0f5c40 100%);
+  background-size: 400px 100%;
+  animation: shimmer 1.8s linear infinite;
+  transform: scale(1.02);
+}
+
+/* ─────────────────────────────────────────
+   Sidebar topic tag
+───────────────────────────────────────── */
+.topic-tag {
+  transition: background-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+.topic-tag:hover {
+  background-color: #1e293b;
+  color: #ffffff;
+  transform: scale(1.07);
+}
+
+/* ─────────────────────────────────────────
+   Header nav link underline slide
+───────────────────────────────────────── */
+.nav-link {
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 1.5px;
+  background: #1e293b;
+  transition: width 0.22s ease;
+}
+.nav-link:hover::after { width: 100%; }
+
+/* ─────────────────────────────────────────
+   Sidebar thumbnail zoom
+───────────────────────────────────────── */
+.thumbnail-wrap {
+  overflow: hidden;
+  border-radius: 6px;
+}
+.thumbnail-wrap > div {
+  transition: transform 0.35s ease;
+}
+.thumbnail-wrap:hover > div {
+  transform: scale(1.12);
+}
+
+/* ─────────────────────────────────────────
+   Sidebar popular post card
+───────────────────────────────────────── */
+.popular-post {
+  transition: background-color 0.2s ease, padding-left 0.2s ease;
+  border-radius: 8px;
+  padding: 6px 4px;
+}
+.popular-post:hover {
+  background-color: #f1f5f9;
+  padding-left: 10px;
+}
+
+/* ─────────────────────────────────────────
+   H2/H3 section headings subtle highlight 
+───────────────────────────────────────── */
+article h2, article h3 {
+  transition: color 0.2s ease;
+}
+article h2:hover, article h3:hover {
+  color: #0f5c40;
+}
+
+/* ─────────────────────────────────────────
+   Search Bar Expand Animation
+───────────────────────────────────────── */
+@keyframes search-expand {
+  from { opacity: 0; transform: scaleX(0.7); }
+  to   { opacity: 1; transform: scaleX(1); }
+}
+.search-expand {
+  transform-origin: right;
+  animation: search-expand 0.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─────────────────────────────────────────
+   Search Dropdown Fade+Drop Animation
+───────────────────────────────────────── */
+@keyframes dropdown-appear {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.search-dropdown {
+  animation: dropdown-appear 0.18s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ─────────────────────────────────────────
+   Mark / highlight in suggestions
+───────────────────────────────────────── */
+mark {
+  background: none;
+  font-style: normal;
+}
+
+/* ─────────────────────────────────────────
+   Floating Animations
+───────────────────────────────────────── */
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+.animate-bounce-subtle {
+  animation: bounce-subtle 2s ease-in-out infinite;
+}
+
