@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const API_BASE = 'https://blog-backend-g1crobixb-tejaswasekars-projects.vercel.app/api';
+const API_BASE = 'https://blog-backend-sepia-theta.vercel.app/api';
 
 export default function CommentSection() {
   const [comments, setComments] = useState([]);
