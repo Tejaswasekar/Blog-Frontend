@@ -60,11 +60,11 @@ export default function CybersecurityThreatsSection() {
       </div>
 
       <p className="mt-8 font-medium italic text-slate-700">
-        To protect against these threats, institutions must adopt comprehensive cybersecurity strategies. These strategies may include firewalls, intrusion detection systems, regular security updates, and cybersecurity awareness training for staff and students.
+        To protect against these threats, institutions must adopt comprehensive cybersecurity strategies. Organizations like <a href="https://www.educause.edu/focus-areas-and-initiatives/policy-and-security/cybersecurity-program" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">EDUCAUSE</a> provide specialized cybersecurity programs for higher education. 
       </p>
       
       <p className="font-medium text-slate-900">
-        By implementing strong cybersecurity practices, educational institutions can protect their digital infrastructure and ensure the safety of their accreditation-related data.
+        Leading security experts at <a href="https://www.cisco.com/c/en/us/products/security/what-is-cybersecurity.html" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Cisco</a> and <a href="https://www.kaspersky.com/resource-center/threats" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Kaspersky</a> suggest that implementing strong cybersecurity practices is essential for educational institutions to protect their digital infrastructure and ensure the safety of their accreditation-related data.
       </p>
     </div>
   );

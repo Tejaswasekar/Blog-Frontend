@@ -4,10 +4,10 @@ export default function DataIntegrityTypesSection() {
   return (
     <div className="space-y-6">
       <p>
-        Data integrity refers to the accuracy, reliability, and consistency of data throughout its lifecycle. In educational institutions, data is generated from many sources such as student admission systems, examination departments, research management systems, faculty databases, and administrative records. Maintaining the integrity of this data means ensuring that the information remains correct and unchanged unless properly updated through authorized processes.
+        Data integrity refers to the accuracy, reliability, and consistency of data throughout its lifecycle. According to <a href="https://www.ibm.com/think/topics/data-integrity" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">IBM</a>, maintaining data integrity is crucial for any information system. In educational institutions, data is generated from many sources such as student admission systems, examination departments, research management systems, faculty databases, and administrative records. Maintaining the integrity of this data means ensuring that the information remains correct and unchanged unless properly updated through authorized processes.
       </p>
       <p>
-        In the context of accreditation, data integrity is extremely important because accreditation bodies such as the National Assessment and Accreditation Council and the National Board of Accreditation rely heavily on institutional data to evaluate the quality of education provided by universities and colleges. If the submitted data is inaccurate or inconsistent, it may lead to incorrect assessments and reduce the credibility of the institution.
+        In the context of accreditation, data integrity is extremely important because accreditation bodies rely heavily on institutional data to evaluate the quality of education. Research published through platforms like <a href="https://www.researchgate.net/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">ResearchGate</a> and <a href="https://link.springer.com/book/10.1007/978-3-319-24106-7" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">Springer</a> highlights how information systems in academia depend on high-quality, trustworthy data for valid evaluation.
       </p>
       
       <p className="font-sans font-medium text-xl text-primary mt-8 mb-4 border-l-4 border-accent pl-4">

@@ -25,6 +25,8 @@ import DatabaseManagementSystemsSection from '../components/sections/DatabaseMan
 import BlockchainAcademicRecordsSection from '../components/sections/BlockchainAcademicRecordsSection';
 import SecureDataManagementStepByStepSection from '../components/sections/SecureDataManagementStepByStepSection';
 
+import ReferencesSection from '../components/sections/ReferencesSection';
+
 export const articleSections = [
   {
     id: 1,
@@ -150,6 +152,11 @@ export const articleSections = [
     id: 25,
     title: 'Building a Secure Data Management System (Step-by-Step Guide)',
     content: <SecureDataManagementStepByStepSection />
+  },
+  {
+    id: 26,
+    title: 'References & Further Reading',
+    content: <ReferencesSection />
   }
 ];
 
@@ -178,5 +185,7 @@ export const topics = [
   'Cloud Computing',
   'Database Management',
   'Blockchain Records',
-  'Secure Management Steps'
+  'Secure Management Steps',
+  'References'
 ];
+

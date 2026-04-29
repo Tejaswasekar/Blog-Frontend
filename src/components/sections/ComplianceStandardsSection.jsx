@@ -11,9 +11,13 @@ export default function ComplianceStandardsSection() {
         <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl flex gap-6 items-center">
            <div className="text-4xl font-serif text-slate-300 font-bold shrink-0 hidden sm:block">01</div>
            <div>
-             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">ISO/IEC 27001</h3>
+             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">
+               <a href="https://www.iso.org/isoiec-27001-information-security.html" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                 ISO/IEC 27001
+               </a>
+             </h3>
              <p className="text-slate-700 text-sm m-0 leading-relaxed">
-               One widely recognized international standard for information security management. This standard provides a framework for establishing, implementing, and maintaining an effective information security management system. Institutions that follow this standard can systematically identify risks and implement security controls to protect their data.
+               One widely recognized international standard for information security management. This standard provides a framework for establishing, implementing, and maintaining an effective information security management system.
              </p>
            </div>
         </div>
@@ -21,7 +25,11 @@ export default function ComplianceStandardsSection() {
         <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl flex gap-6 items-center">
            <div className="text-4xl font-serif text-slate-300 font-bold shrink-0 hidden sm:block">02</div>
            <div>
-             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">General Data Protection Regulation (GDPR)</h3>
+             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">
+               <a href="https://gdpr.eu/" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                 General Data Protection Regulation (GDPR)
+               </a>
+             </h3>
              <p className="text-slate-700 text-sm m-0 leading-relaxed">
                Although GDPR is primarily implemented in the European Union, its principles have influenced global data protection practices. GDPR emphasizes the protection of personal data and requires organizations to implement strong privacy safeguards.
              </p>
@@ -31,9 +39,23 @@ export default function ComplianceStandardsSection() {
         <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl flex gap-6 items-center border-l-4 border-l-emerald-500">
            <div className="text-4xl font-serif text-emerald-200 font-bold shrink-0 hidden sm:block">03</div>
            <div>
-             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">Information Technology Act, 2000 (India)</h3>
+             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">
+               <a href="https://www.meity.gov.in/content/information-technology-act-2000" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">
+                 Information Technology Act, 2000 (India)
+               </a>
+             </h3>
              <p className="text-slate-700 text-sm m-0 leading-relaxed">
                In India, institutions must comply with this Act, which includes provisions related to cybersecurity, electronic records, and data protection.
+             </p>
+           </div>
+        </div>
+
+        <div className="bg-slate-50 border border-slate-200 p-6 rounded-xl flex gap-6 items-center">
+           <div className="text-4xl font-serif text-slate-300 font-bold shrink-0 hidden sm:block">04</div>
+           <div>
+             <h3 className="text-xl font-sans font-bold text-slate-900 mb-2">NIST Frameworks</h3>
+             <p className="text-slate-700 text-sm m-0 leading-relaxed">
+               Frameworks such as the <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">NIST Cybersecurity Framework</a> and <a href="https://csrc.nist.gov/publications/detail/sp/800-53/rev-5/final" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">NIST SP 800-53</a> provide detailed guidelines for securing information systems.
              </p>
            </div>
         </div>

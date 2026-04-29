@@ -13,7 +13,7 @@ export default function DataGovernanceSection() {
         A strong data governance framework helps institutions clearly define who is responsible for collecting, updating, and maintaining specific data. For example, student performance data may be managed by the examination department, while faculty research data may be managed by the research cell.
       </p>
       <p>
-        Good governance practices also ensure that data is stored securely and accessed only by authorized individuals. This prevents misuse of sensitive information such as student records or confidential research data.
+        Good governance practices also ensure that data is stored securely and accessed only by authorized individuals. This prevents misuse of sensitive information such as student records or confidential research data. Leading organizations like <a href="https://www.gartner.com/en/information-technology/glossary/data-governance" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">Gartner</a> and <a href="https://www.ibm.com/topics/data-governance" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">IBM</a> emphasize that effective governance is the foundation of any data-driven institution.
       </p>
       
       <div className="my-8 rounded-xl overflow-hidden shadow-sm">
@@ -29,7 +29,7 @@ export default function DataGovernanceSection() {
       </div>
       
       <p>
-        For accreditation processes, data governance plays a very important role. Accreditation reports require data collected from multiple departments, including academics, administration, research, and student services. A well-organized governance system helps institutions compile this information efficiently and accurately.
+        For accreditation processes, data governance plays a very important role. Accreditation reports require data collected from multiple departments, including academics, administration, research, and student services. Organizations such as the <a href="https://datagovernance.com/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">Data Governance Institute</a> and <a href="https://www.dama.org/" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">DAMA International</a> provide frameworks that help institutions compile this information efficiently and accurately.
       </p>
       <p>
         Therefore, data governance not only supports accreditation but also strengthens the overall management of educational institutions.
