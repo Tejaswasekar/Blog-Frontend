@@ -3,12 +3,14 @@ import { articleSections, topics } from './data/articleContent';
 import SearchBar from './components/SearchBar';
 import CommentSection from './components/CommentSection';
 import SocialInteraction from './components/SocialInteraction';
+import VideoModal from './components/VideoModal';
 
 function App() {
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
   const [isFading, setIsFading] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [hoveredProgressItem, setHoveredProgressItem] = useState(null);
+  const [isVideoModalOpen, setIsVideoModalOpen] = useState(false);
   const pillRefs = useRef([]);
   const pillContainerRef = useRef(null);
 
@@ -136,6 +138,16 @@ function App() {
             <a href="#" className="nav-link hover:text-black">Explore</a>
             <a href="#" className="nav-link hover:text-black">Stories</a>
             <a href="#" className="nav-link hover:text-black">Topics</a>
+            <button 
+              onClick={() => setIsVideoModalOpen(true)}
+              className="nav-link hover:text-emerald-600 font-bold flex items-center gap-1.5"
+            >
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Video
+            </button>
           </nav>
 
           {/* Right Actions */}
@@ -472,6 +484,12 @@ function App() {
         </button>
       )}
 
+      {/* Video Modal Overlay */}
+      <VideoModal 
+        isOpen={isVideoModalOpen} 
+        onClose={() => setIsVideoModalOpen(false)} 
+        videoUrl="" 
+      />
     </div>
   );
 }
