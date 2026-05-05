@@ -10,6 +10,7 @@ import TechniquesEnsureAccuracySection from '../components/sections/TechniquesEn
 import ValidationVerificationSection from '../components/sections/ValidationVerificationSection';
 import CaseStudyFailureSection from '../components/sections/CaseStudyFailureSection';
 import CaseStudyUCSFSection from '../components/sections/CaseStudyUCSFSection';
+import CaseStudyMichiganSection from '../components/sections/CaseStudyMichiganSection';
 import DataGovernanceFrameworkSection from '../components/sections/DataGovernanceFrameworkSection';
 import KeyComponentsGovernanceSection from '../components/sections/KeyComponentsGovernanceSection';
 import RolesResponsibilitiesGovernanceSection from '../components/sections/RolesResponsibilitiesGovernanceSection';
@@ -86,81 +87,86 @@ export const articleSections = [
   },
   {
     id: 12,
+    title: 'Case Study: University of Michigan Data Breach',
+    content: <CaseStudyMichiganSection />
+  },
+  {
+    id: 13,
     title: 'What is a Data Governance Framework?',
     content: <DataGovernanceFrameworkSection />
   },
   {
-    id: 13,
+    id: 14,
     title: 'Key Components of Institutional Data Governance',
     content: <KeyComponentsGovernanceSection />
   },
   {
-    id: 14,
+    id: 15,
     title: 'Roles and Responsibilities in Data Governance',
     content: <RolesResponsibilitiesGovernanceSection />
   },
   {
-    id: 15,
+    id: 16,
     title: 'Data Ownership and Accountability in Universities',
     content: <DataOwnershipAccountabilitySection />
   },
   {
-    id: 16,
+    id: 17,
     title: 'Policy Design for Secure Data Governance',
     content: <PolicyDesignGovernanceSection />
   },
   {
-    id: 17,
+    id: 18,
     title: 'Importance of Data Security in Accreditation',
     content: <ImportanceOfDataSecuritySection />
   },
   {
-    id: 18,
+    id: 19,
     title: 'Cybersecurity Threats in Educational Data Systems',
     content: <CybersecurityThreatsSection />
   },
   {
-    id: 19,
+    id: 20,
     title: 'Role of Encryption in Protecting Institutional Data',
     content: <RoleOfEncryptionSection />
   },
   {
-    id: 20,
+    id: 21,
     title: 'Compliance Standards for Educational Data Security',
     content: <ComplianceStandardsSection />
   },
   {
-    id: 21,
+    id: 22,
     title: 'Audit and Monitoring for Data Security',
     content: <AuditAndMonitoringSection />
   },
   {
-    id: 22,
+    id: 23,
     title: 'Role of AI and Automation in Data Governance',
     content: <RoleOfAIAutomationSection />
   },
   {
-    id: 23,
+    id: 24,
     title: 'Using Cloud Computing for Institutional Data Management',
     content: <CloudComputingManagementSection />
   },
   {
-    id: 24,
+    id: 25,
     title: 'Database Management Systems for Accreditation Data',
     content: <DatabaseManagementSystemsSection />
   },
   {
-    id: 25,
+    id: 26,
     title: 'Blockchain for Secure Academic Records',
     content: <BlockchainAcademicRecordsSection />
   },
   {
-    id: 26,
+    id: 27,
     title: 'Building a Secure Data Management System (Step-by-Step Guide)',
     content: <SecureDataManagementStepByStepSection />
   },
   {
-    id: 27,
+    id: 28,
     title: 'References & Further Reading',
     content: <ReferencesSection />
   }
@@ -178,6 +184,7 @@ export const topics = [
   'Validation & Verification',
   'Case Study Failure',
   'Case Study UCSF',
+  'Case Study Michigan',
   'Governance Framework',
   'Key Components',
   'Roles & Responsibilities',
