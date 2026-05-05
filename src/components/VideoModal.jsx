@@ -19,7 +19,7 @@ export default function VideoModal({ isOpen, onClose, videoUrl }) {
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 md:p-12">
       {/* Backdrop with glassmorphism */}
       <div 
-        className="absolute inset-0 bg-slate-900/30 backdrop-blur-xl transition-opacity duration-300"
+        className="absolute inset-0 bg-transparent transition-opacity duration-300"
         onClick={onClose}
       ></div>
 
