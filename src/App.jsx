@@ -158,7 +158,7 @@ function App() {
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-12 mt-4 justify-items-center w-full max-w-[1000px]">
             {[
-              "Kuldeep Vayadande", "Tejas Wasekar", "Shubham Tambe", 
+              "Tejas Wasekar", "Shubham Tambe", 
               "Aniket Thenge", "Siddharth Vaskar", "Shashank Daga"
             ].map((name, i) => (
               <div key={name} className="flex items-center gap-4 px-5 py-3 rounded-2xl transition-all duration-500 hover:bg-white/80 hover:shadow-[0_15px_30px_-10px_rgba(0,0,0,0.06)] hover:backdrop-blur-lg group border border-transparent hover:border-white/90 w-full max-w-[240px]">
