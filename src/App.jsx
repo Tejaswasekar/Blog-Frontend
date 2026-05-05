@@ -147,6 +147,10 @@ function App() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
               Video
+              <span className="bg-emerald-500 text-white text-[9px] font-black uppercase tracking-wider px-1.5 py-0.5 rounded-full ml-0.5 shadow-sm relative overflow-hidden">
+                <span className="relative z-10">New</span>
+                <span className="absolute inset-0 bg-white/30 animate-pulse z-0"></span>
+              </span>
             </button>
           </nav>
 
