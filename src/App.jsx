@@ -488,7 +488,7 @@ function App() {
       <VideoModal 
         isOpen={isVideoModalOpen} 
         onClose={() => setIsVideoModalOpen(false)} 
-        videoUrl="" 
+        videoUrl="/Simulation Video .mp4" 
       />
     </div>
   );
