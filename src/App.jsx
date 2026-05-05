@@ -156,12 +156,12 @@ function App() {
             Ensuring Data Integrity: The Foundation of Reliable Insights in the Digital Age
           </h1>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-4 md:gap-x-12 mt-4 justify-items-center w-full max-w-[1000px]">
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-y-8 gap-x-4 md:gap-x-12 mt-4 justify-items-center w-full max-w-[1000px]">
             {[
               "Tejas Wasekar", "Shubham Tambe", 
               "Aniket Thenge", "Siddharth Vaskar", "Shashank Daga"
             ].map((name, i) => (
-              <div key={name} className="flex items-center gap-4 px-5 py-3 rounded-2xl transition-all duration-500 hover:bg-white/80 hover:shadow-[0_15px_30px_-10px_rgba(0,0,0,0.06)] hover:backdrop-blur-lg group border border-transparent hover:border-white/90 w-full max-w-[240px]">
+              <div key={name} className={`flex items-center gap-4 px-5 py-3 rounded-2xl transition-all duration-500 hover:bg-white/80 hover:shadow-[0_15px_30px_-10px_rgba(0,0,0,0.06)] hover:backdrop-blur-lg group border border-transparent hover:border-white/90 w-full max-w-[240px] col-span-1 md:col-span-2 ${i === 3 ? 'md:col-start-2' : ''} ${i === 4 ? 'col-span-2 md:col-span-2' : ''}`}>
                 <div className="relative shrink-0">
                   <div className="w-12 h-12 rounded-full bg-gray-100 overflow-hidden ring-4 ring-white shadow-md group-hover:shadow-2xl group-hover:ring-emerald-50 transition-all duration-700">
                     <div className={`w-full h-full flex items-end justify-center pt-2 ${
